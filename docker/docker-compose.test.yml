@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  test:
+    image: alpine
+    command: ls /app
+    volumes:
+      - ..:/app

@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  # Python development environment for Session Storage Lab
+  session-lab:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "5010:5000"
+    volumes:
+      - ..:/app
+    environment:
+      - PYTHONPATH=/app
+      - PYTHONUNBUFFERED=1
+    working_dir: /app
+    command: tail -f /dev/null # Keep container running for development

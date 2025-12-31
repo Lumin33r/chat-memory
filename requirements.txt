@@ -1,0 +1,2 @@
+# No external dependencies required for this lab
+# All functionality uses Python standard library
