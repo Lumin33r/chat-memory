@@ -1,0 +1,31 @@
+// Modern chat session sidebar CSS for chat.html
+.session-sidebar {
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+  height: 400px;
+  overflow-y: auto;
+}
+.session-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.25rem;
+  border-bottom: 1px solid #e9ecef;
+  transition: background 0.2s;
+}
+.session-item:last-child {
+  border-bottom: none;
+}
+.session-item:hover {
+  background: #e9ecef;
+  cursor: pointer;
+}
+.session-meta {
+  font-size: 0.85em;
+  color: #6c757d;
+}
+.session-actions button {
+  margin-left: 0.5rem;
+}
