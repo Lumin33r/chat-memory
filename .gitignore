@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+.envrc
+
+# Flask instance and config
+instance/
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Flask uploads
+uploads/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+
+# Session store files
+sessions/
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Misc
+*.tmp
+*.out
+*.log
+
+# Node/npm (if present)
+node_modules/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Other
+*.egg-info/
+dist/
+build/
+
+# Ignore secrets
+*.secret
+*.key
+*.pem
+
+# Ignore compiled files
+*.so
+*.dll
+*.exe
