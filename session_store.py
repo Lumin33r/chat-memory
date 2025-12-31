@@ -23,7 +23,9 @@ class SimpleSessionStore:
         Args:
             storage_dir: Directory to store session files
         """
-        self.storage_dir = storage_dir
+        import os
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        self.storage_dir = os.path.join(BASE_DIR, storage_dir)
         self._ensure_storage_dir()
 
     def _ensure_storage_dir(self):
